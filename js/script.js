@@ -21,8 +21,8 @@ $(document.body).ready(function(){
         clearInterval(tempSlider)
     })
     
-    document.querySelector("continuar").addEventListener("click", function(){
-        trocaSlider()
-        clearTimeout(conta)
+    document.querySelector("#continuar").addEventListener("click", function(){
+        tempSlider = setInterval(trocaSlider, 1000)
+        
     })
 })

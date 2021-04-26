@@ -1,0 +1,12 @@
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#blocoSlider img {
+    display: none;
+}
+
+.block{
+    display: block!important;
+}

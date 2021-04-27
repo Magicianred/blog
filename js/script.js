@@ -19,11 +19,15 @@ $(document.body).ready(function(){
     
     document.querySelector("#blocoSlider").addEventListener("mouseover", function(){
         clearInterval(tempSlider)
+        document.querySelector("#voltar").style.display = "flex"
+        document.querySelector("#avancar").style.display = "flex"
     })
     
     document.querySelector("#blocoSlider").addEventListener("mouseout", function(){
         clearInterval(tempSlider)
         tempSlider = setInterval(trocaSlider, 5500)
+        document.querySelector("#voltar").style.display = "none"
+        document.querySelector("#avancar").style.display = "none"
     })
 
     document.querySelector("#avancar").addEventListener("click", function(){

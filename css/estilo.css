@@ -95,15 +95,28 @@
     animation:animateleft 0.8s;
 }
 
-#avancar {
-    padding: 5px;
+#avancar, #voltar {
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 50%;
     position: absolute;
-    right: 0px;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-#voltar {
-    position: absolute;
+#avancar img, #voltar img {
+    width: 40px;
+    height: 40px;
 }
+
+#avancar {
+    right: 0px; 
+}
+
+
+
+
 
 
 

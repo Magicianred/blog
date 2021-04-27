@@ -1,5 +1,5 @@
 $(document.body).ready(function(){
-    let tempSlider = setInterval(trocaSlider, 2500)
+    let tempSlider = setInterval(trocaSlider, 5500)
 
     function trocaSlider(){
         if(document.querySelector("#img1").classList.contains("block")){
@@ -17,20 +17,18 @@ $(document.body).ready(function(){
         }
     }
     
-    document.querySelector("#pausar").addEventListener("click", function(){
+    document.querySelector("#blocoSlider").addEventListener("mouseover", function(){
         clearInterval(tempSlider)
     })
     
-    document.querySelector("#continuar").addEventListener("click", function(){
+    document.querySelector("#blocoSlider").addEventListener("mouseout", function(){
         clearInterval(tempSlider)
-        tempSlider = setInterval(trocaSlider, 2500)
-        trocaSlider()
-        
+        tempSlider = setInterval(trocaSlider, 5500)
     })
 
     document.querySelector("#avancar").addEventListener("click", function(){
         clearInterval(tempSlider)
-        tempSlider = setInterval(trocaSlider, 2500)
+        tempSlider = setInterval(trocaSlider, 5500)
         trocaSlider()
     })
 
@@ -39,21 +37,19 @@ $(document.body).ready(function(){
         if(document.querySelector("#img1").classList.contains("block")){
             document.querySelector("#img1").classList.remove("block")
             document.querySelector("#img4").classList.add("block")
-            tempSlider = setInterval(trocaSlider, 2500)
+            tempSlider = setInterval(trocaSlider, 5500)
         }else if(document.querySelector("#img2").classList.contains("block")){
             document.querySelector("#img2").classList.remove("block")
             document.querySelector("#img1").classList.add("block")
-            tempSlider = setInterval(trocaSlider, 2500)
+            tempSlider = setInterval(trocaSlider, 5500)
         }else if(document.querySelector("#img3").classList.contains("block")){
             document.querySelector("#img3").classList.remove("block")
             document.querySelector("#img2").classList.add("block")
-            tempSlider = setInterval(trocaSlider, 2500)
+            tempSlider = setInterval(trocaSlider, 5500)
         }else if(document.querySelector("#img4").classList.contains("block")){
             document.querySelector("#img4").classList.remove("block")
             document.querySelector("#img3").classList.add("block")
-            tempSlider = setInterval(trocaSlider, 2500)
+            tempSlider = setInterval(trocaSlider, 5500)
         }
-    })
-
-    
+    }) 
 })

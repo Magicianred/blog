@@ -2,6 +2,15 @@
     padding: 0px;
     margin: 0px;
 }
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
 /*Menu superior*/
 #blocoMenuSup {
     background-color: black;
@@ -29,19 +38,18 @@
 }
 
 /*Submenu*/
-.subMenu::after {
+#subMenu::after {
     content: "▿";
 }
 
-.subMenu ul {
+#subMenu ul {
     z-index: 999;
     position: absolute;
     background-color: black;
     padding: 5px;
-    display: none;
 }
 
-.subMenu li {
+#subMenu li {
     display: block!important;
     font-size: 20px!important;
     font-style: italic;
@@ -64,7 +72,7 @@
     }
 
     #blocoMenuSup ul {
-        display: none;
+        /*display: none;*/
         position: absolute;
         right: 0px;
         top: 80px;
@@ -80,7 +88,17 @@
     #blocoMenuSup li {
         display: block;
     }
-} 
+}
+
+@media only screen and (min-width:701px){
+    #menu, #subMenu ul {
+        display: none;
+    }
+
+    #blocoMenuSup ul {
+        display: block;
+    }
+}
 
 /*Slider*/
 #blocoSlider {
@@ -194,6 +212,9 @@
 #avancar {
     right: 0px; 
 }
+
+/*Corpo*/
+
 
 
 

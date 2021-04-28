@@ -1,26 +1,30 @@
 $(document.body).ready(function(){
     //Menu superior
     function abreSubMenu(){
-        $(".subMenu ul").css("display", "block")
-        $(".subMenu").off("click", abreSubMenu)
-        $(".subMenu").on("click", fecharSubMenu)
+        //$("#subMenu ul").css("display", "block")
+        $("#subMenu ul").addClass("block")
+        $("#subMenu ul").removeClass("none")
+        $("#subMenu").off("click", abreSubMenu)
+        $("#subMenu").on("click", fecharSubMenu)
     }
 
-    $(".subMenu").on("click", abreSubMenu)
+    $("#subMenu").on("click", abreSubMenu)
 
     function fecharSubMenu(){
-        $(".subMenu ul").css("display", "none")
-        $(".subMenu").on("click", abreSubMenu)
-        $(".subMenu").off("click", fecharSubMenu)
+        //$("#subMenu ul").css("display", "none")
+        $("#subMenu ul").addClass("none")
+        $("#subMenu ul").removeClass("block")
+        $("#subMenu").on("click", abreSubMenu)
+        $("#subMenu").off("click", fecharSubMenu)
     }
 
-
-    //$(".subMenu ul").css("display", "none")
-
-    //$("#blocoMenuSup ul")
     function abreMenu(){
-        $("#blocoMenuSup ul").css("display", "block")
-        $("#blocoMenuSup ul ul").css("display", "none")
+        /*$("#blocoMenuSup ul").css("display", "block")
+        $("#blocoMenuSup ul ul").css("display", "none")*/
+        $("#blocoMenuSup ul").addClass("block")
+        $("#subMenu ul").addClass("none")
+        $("#blocoMenuSup ul").removeClass("none")
+        $("#subMenu ul").removeClass("block")
         $("#menu").off("click", abreMenu)
         $("#menu").on("click", fecharMenu)
     }
@@ -28,20 +32,13 @@ $(document.body).ready(function(){
     $("#menu").on("click", abreMenu)
 
     function fecharMenu(){
-        $("#blocoMenuSup ul").css("display", "none")
-        $("#blocoMenuSup ul ul").css("display", "none")
+        $("#blocoMenuSup ul").addClass("none")
+        $("#subMenu ul").addClass("none")
+        $("#blocoMenuSup ul").removeClass("block")
+        $("#subMenu ul").removeClass("block")
         $("#menu").off("click", fecharMenu)
         $("#menu").on("click", abreMenu)
     }
-
-    
-    /*
-      $("#menu").click(function(){
-            $("#blocoMenuSup ul").css("display", "none")
-            $("#blocoMenuSup ul ul").css("display", "none")
-            $("#menu").off("click", "**")
-        })
-    */
 
     //Slider
     let tempSlider = setInterval(trocaSlider, 5500)

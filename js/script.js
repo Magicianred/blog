@@ -1,4 +1,49 @@
 $(document.body).ready(function(){
+    //Menu superior
+    function abreSubMenu(){
+        $(".subMenu ul").css("display", "block")
+        $(".subMenu").off("click", abreSubMenu)
+        $(".subMenu").on("click", fecharSubMenu)
+    }
+
+    $(".subMenu").on("click", abreSubMenu)
+
+    function fecharSubMenu(){
+        $(".subMenu ul").css("display", "none")
+        $(".subMenu").on("click", abreSubMenu)
+        $(".subMenu").off("click", fecharSubMenu)
+    }
+
+
+    //$(".subMenu ul").css("display", "none")
+
+    //$("#blocoMenuSup ul")
+    function abreMenu(){
+        $("#blocoMenuSup ul").css("display", "block")
+        $("#blocoMenuSup ul ul").css("display", "none")
+        $("#menu").off("click", abreMenu)
+        $("#menu").on("click", fecharMenu)
+    }
+
+    $("#menu").on("click", abreMenu)
+
+    function fecharMenu(){
+        $("#blocoMenuSup ul").css("display", "none")
+        $("#blocoMenuSup ul ul").css("display", "none")
+        $("#menu").off("click", fecharMenu)
+        $("#menu").on("click", abreMenu)
+    }
+
+    
+    /*
+      $("#menu").click(function(){
+            $("#blocoMenuSup ul").css("display", "none")
+            $("#blocoMenuSup ul ul").css("display", "none")
+            $("#menu").off("click", "**")
+        })
+    */
+
+    //Slider
     let tempSlider = setInterval(trocaSlider, 5500)
 
     function trocaSlider(){

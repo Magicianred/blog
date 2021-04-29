@@ -98,7 +98,8 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-bottom: 5px black solid;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-bottom: 4px dashed black;
 }
 
 .block {
@@ -203,6 +204,60 @@
 }
 
 /*Corpo*/
+article {
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#blocoResumos {
+    width: calc(100% - 245px);
+    min-height: 60vh;
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#menuLateral {
+    width: 245px;
+    min-height: 60vh;
+    margin-left: 5px;
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#resumos {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.resumo {
+    width: calc(50% - 15px);
+    height: 500px;
+    border: blue 1px solid;
+    margin: 5px;
+    display: inline-block;
+}
+
+#menuLateral ul {
+    margin: 5px;
+}
+
+#menuLateral li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#artRecBloco {
+    margin: 0px 5px 0px 5px;
+}
+
 
 
 

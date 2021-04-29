@@ -3,14 +3,6 @@
     margin: 0px;
 }
 
-.block {
-    display: block;
-}
-
-.none {
-    display: none;
-}
-
 /*Menu superior*/
 #blocoMenuSup {
     background-color: black;
@@ -44,6 +36,7 @@
 
 #subMenu ul {
     z-index: 999;
+    display: none;
     position: absolute;
     background-color: black;
     padding: 5px;
@@ -71,8 +64,8 @@
         display: block;
     }
 
-    #blocoMenuSup ul {
-        /*display: none;*/
+    #menuSup{
+        display: none;
         position: absolute;
         right: 0px;
         top: 80px;
@@ -91,12 +84,8 @@
 }
 
 @media only screen and (min-width:701px){
-    #menu, #subMenu ul {
-        display: none;
-    }
-
-    #blocoMenuSup ul {
-        display: block;
+    #menuSup {
+        display: block!important;
     }
 }
 
@@ -109,7 +98,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-bottom: 5px black double;
+    border-bottom: 5px black solid;
 }
 
 .block {

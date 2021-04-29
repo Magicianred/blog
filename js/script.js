@@ -1,9 +1,7 @@
 $(document.body).ready(function(){
     //Menu superior
     function abreSubMenu(){
-        //$("#subMenu ul").css("display", "block")
-        $("#subMenu ul").addClass("block")
-        $("#subMenu ul").removeClass("none")
+        $("#subMenu ul").css("display", "block")
         $("#subMenu").off("click", abreSubMenu)
         $("#subMenu").on("click", fecharSubMenu)
     }
@@ -11,20 +9,13 @@ $(document.body).ready(function(){
     $("#subMenu").on("click", abreSubMenu)
 
     function fecharSubMenu(){
-        //$("#subMenu ul").css("display", "none")
-        $("#subMenu ul").addClass("none")
-        $("#subMenu ul").removeClass("block")
+        $("#subMenu ul").css("display", "none")
         $("#subMenu").on("click", abreSubMenu)
         $("#subMenu").off("click", fecharSubMenu)
     }
 
     function abreMenu(){
-        /*$("#blocoMenuSup ul").css("display", "block")
-        $("#blocoMenuSup ul ul").css("display", "none")*/
-        $("#blocoMenuSup ul").addClass("block")
-        $("#subMenu ul").addClass("none")
-        $("#blocoMenuSup ul").removeClass("none")
-        $("#subMenu ul").removeClass("block")
+        $("#menuSup").css("display", "block")
         $("#menu").off("click", abreMenu)
         $("#menu").on("click", fecharMenu)
     }
@@ -32,10 +23,7 @@ $(document.body).ready(function(){
     $("#menu").on("click", abreMenu)
 
     function fecharMenu(){
-        $("#blocoMenuSup ul").addClass("none")
-        $("#subMenu ul").addClass("none")
-        $("#blocoMenuSup ul").removeClass("block")
-        $("#subMenu ul").removeClass("block")
+        $("#menuSup").css("display", "none")
         $("#menu").off("click", fecharMenu)
         $("#menu").on("click", abreMenu)
     }

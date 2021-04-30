@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px 5px 20px;
+    width: calc(100% - 40px);
 }
 
 #logo img {
@@ -211,6 +212,7 @@ article {
 #principal {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 95%;
     margin: 0 auto;
     padding-top: 50px;
@@ -219,17 +221,17 @@ article {
 
 #blocoResumos {
     width: calc(100% - 245px);
-    min-height: 60vh;
     background-color: white;
     padding: 20px 0px 20px 0px;
 }
 
 #menuLateral {
     width: 245px;
-    min-height: 60vh;
     margin-left: 5px;
     background-color: white;
     padding: 20px 0px 20px 0px;
+    position: sticky;
+    top: 85px;
 }
 
 #resumos {

@@ -28,6 +28,15 @@ $(document.body).ready(function(){
         $("#menu").on("click", abreMenu)
     }
 
+    //fixa menu superior
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 10){
+            $("#blocoMenuSup").css("position", "fixed")
+        }else {
+            $("#blocoMenuSup").css("position", "relative")
+        }
+    })
+
     //Slider
     let tempSlider = setInterval(trocaSlider, 5500)
 

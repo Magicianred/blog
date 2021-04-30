@@ -30,7 +30,7 @@ $(document.body).ready(function(){
 
     //fixa menu superior
     $(window).scroll(function(){
-        if($(this).scrollTop() > 10){
+        if($(this).scrollTop() > 300){
             $("#blocoMenuSup").css("position", "fixed")
         }else {
             $("#blocoMenuSup").css("position", "relative")

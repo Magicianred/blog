@@ -29,13 +29,25 @@ $(document.body).ready(function(){
     }
 
     //fixa menu superior ao rolar para baixo
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 300){
-            $("#blocoMenuSup").css("position", "fixed")
-        }else {
-            $("#blocoMenuSup").css("position", "relative")
-        }
-    })
+    if(!$("div").hasClass("blocoArtigo")){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 300){
+                $("#blocoMenuSup").css("position", "fixed")
+            }else {
+                $("#blocoMenuSup").css("position", "relative")
+            }
+        })
+    }else {
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 50){
+                $("#blocoMenuSup").css("position", "fixed")
+            }else {
+                $("#blocoMenuSup").css("position", "relative")
+            }
+        })
+    }
+
+    
 
     //Slider
     let tempSlider = setInterval(trocaSlider, 5500)

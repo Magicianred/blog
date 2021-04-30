@@ -208,6 +208,8 @@
 /*Corpo*/
 article {
     background-color: rgba(0, 0, 0, 0.233);
+    z-index: 99;
+    position: relative;
 }
 
 #principal {
@@ -272,14 +274,32 @@ article {
     padding-top: 20px;
 }
 
+/*Artigos*/
+.blocoArtigo {
+    padding: 50px;
+}
+
+.blocoArtigo p {
+    margin: 15px 0px 15px 0px;
+}
+
+.blocoArtigo img {
+    width: 400px;
+    height: 400px;
+    float: right;
+    padding: 5px;
+}
+
+.blocoArtigo h1 {
+    font-size: 40px;
+}
+
 /*Roda-pé*/
 footer {
     background-color: black;
     width: 100%;
     height: 130px;
     padding: 15px 0px 15px 0px;
-    display: flex;
-    align-items: center;
 }
 
 #footerItens {
@@ -290,13 +310,12 @@ footer {
     width: 100%;
     height: 100px;
     position: fixed;
-    z-index: 999;
-    bottom: 0px;
+    bottom: 25px;
 }
 
 #footerItens p {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
     width: 100%;
     text-align: center;

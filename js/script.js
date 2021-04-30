@@ -38,13 +38,8 @@ $(document.body).ready(function(){
             }
         })
     }else {
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 50){
-                $("#blocoMenuSup").css("position", "fixed")
-            }else {
-                $("#blocoMenuSup").css("position", "relative")
-            }
-        })
+        $("#blocoMenuSup").css("position", "fixed")
+        $("#principal").css("padding-top", "136px")
     }
 
     

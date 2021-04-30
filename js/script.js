@@ -28,7 +28,7 @@ $(document.body).ready(function(){
         $("#menu").on("click", abreMenu)
     }
 
-    //fixa menu superior
+    //fixa menu superior ao rolar para baixo
     $(window).scroll(function(){
         if($(this).scrollTop() > 300){
             $("#blocoMenuSup").css("position", "fixed")

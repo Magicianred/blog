@@ -272,6 +272,40 @@ article {
     padding-top: 20px;
 }
 
+/*Roda-pé*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#footerItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+}
+
+#footerItens p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+#footerItens img {
+    padding: 0px 5px 0px 0px;
+    cursor: pointer;
+}
 
 
 

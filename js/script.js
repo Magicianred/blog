@@ -42,8 +42,6 @@ $(document.body).ready(function(){
         $("#principal").css("padding-top", "136px")
     }
 
-    
-
     //Slider
     let tempSlider = setInterval(trocaSlider, 5500)
 
@@ -96,6 +94,25 @@ $(document.body).ready(function(){
         tempSlider = setInterval(trocaSlider, 5500)
         $("#voltar").css("display", "none")
         $("#avancar").css("display", "none")
-    })  
+    })
+    
+    //Resumos de artigos
+    if(!$("div").hasClass("blocoArtigo")){
+       /* $.ajax({
+           url: "../artigos/artigo1.html",
+            success: function(result){
+                $("#resumo1").load("../artigos/artigo1.html article")
+            }
+        })*/
+        
+    $.ajax({
+        async: true,
+        type: 'POST',
+        url: "artigos/artigo1.html",
+        success: function(retorno){
+            $("#resumo1").load("artigos/artigo1.html article")  
+        }
+    })
+    }
   
 })

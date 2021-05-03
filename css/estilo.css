@@ -280,34 +280,34 @@ article {
 }
 
 /*Artigos*/
-.blocoArtigo {
+#blocoArtigo {
     padding: 50px;
 }
 
-.blocoArtigo p {
+#blocoArtigo p {
     margin: 15px 0px 15px 0px;
 }
 
-.blocoArtigo img {
+#blocoArtigo img {
     width: 400px;
     height: 400px;
     float: right;
     padding: 7px;
 }
 
-.blocoArtigo h1 {
+#blocoArtigo h1 {
     font-size: 40px;
 }
 
 @media only screen and (max-width:1110px){
-    .blocoArtigo img {
+    #blocoArtigo img {
         width: 300px;
         height: 300px; 
     }
 }
 
 @media only screen and (max-width:900px){
-    .blocoArtigo {
+    #blocoArtigo {
         padding: 7px;
     }
 
@@ -327,7 +327,7 @@ article {
 }
 
 @media only screen and (max-width:600px){
-    .blocoArtigo img {
+    #blocoArtigo img {
         float: inherit;
         display: block;
         margin: 0 auto;
@@ -335,7 +335,7 @@ article {
 }
 
 @media only screen and (max-width:360px){
-    .blocoArtigo img {
+    #blocoArtigo img {
         width: 200px;
         height: 200px;
     }

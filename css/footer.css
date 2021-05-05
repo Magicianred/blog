@@ -1,0 +1,45 @@
+/*Roda-pé*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    padding: 15px 0px 15px 0px;
+}
+
+#footerItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 27px;
+}
+
+#footerItens p {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+#iconFace, #iconInst, #iconTwit {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+}
+
+#iconFace {
+    background-image: url("../img/facebook.png");
+}
+
+#iconInst{
+    background-image: url("../img/instagram.png");
+}
+
+#iconTwit {
+    background-image: url("../img/twitter.png");
+}

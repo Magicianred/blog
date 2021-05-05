@@ -1,48 +1,4 @@
 $(document.body).ready(function(){
-    //Menu superior
-    function abreSubMenu(){
-        $("#subMenu ul").css("display", "block")
-        $("#subMenu").off("click", abreSubMenu)
-        $("#subMenu").on("click", fecharSubMenu)
-    }
-
-    $("#subMenu").on("click", abreSubMenu)
-
-    function fecharSubMenu(){
-        $("#subMenu ul").css("display", "none")
-        $("#subMenu").on("click", abreSubMenu)
-        $("#subMenu").off("click", fecharSubMenu)
-    }
-
-    function abreMenu(){
-        $("#menuSup").css("display", "block")
-        $("#menu").off("click", abreMenu)
-        $("#menu").on("click", fecharMenu)
-    }
-
-    $("#menu").on("click", abreMenu)
-
-    function fecharMenu(){
-        $("#menuSup").css("display", "none")
-        $("#menu").off("click", fecharMenu)
-        $("#menu").on("click", abreMenu)
-    }
-
-    //fixa menu superior ao rolar para baixo
-    if(!$("div").hasClass("blocoArtigo")){
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 300){
-                $("#blocoMenuSup").css("position", "fixed")
-            }else {
-                $("#blocoMenuSup").css("position", "relative")
-            }
-        })
-    }else {
-        $("#blocoMenuSup").css("position", "fixed")
-        $("#principal").css("padding-top", "136px")
-    }
-
-    //Slider
     let tempSlider = setInterval(trocaSlider, 5500)
 
     function trocaSlider(){
@@ -95,24 +51,5 @@ $(document.body).ready(function(){
         $("#voltar").css("display", "none")
         $("#avancar").css("display", "none")
     })
-    
-    //Resumos de artigos
-    if(!$("div").hasClass("blocoArtigo")){
-       /* $.ajax({
-           url: "../artigos/artigo1.html",
-            success: function(result){
-                $("#resumo1").load("../artigos/artigo1.html article")
-            }
-        })*/
-        
-    $.ajax({
-        async: true,
-        type: 'POST',
-        url: "artigos/artigo1.html",
-        success: function(retorno){
-            $("#resumo1").load("artigos/artigo1.html article")  
-        }
-    })
-    }
   
 })

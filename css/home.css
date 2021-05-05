@@ -1,0 +1,57 @@
+#blocoResumos {
+    width: calc(100% - 245px);
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#resumos {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.resumo {
+    width: calc(50% - 15px);
+    height: 377px;
+    border: blue 1px solid;
+    margin: 5px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#resArt h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#imgArt1 {
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    height: 377px;
+    width: 100%;  
+}
+
+
+iframe {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imgResBloco {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+#resArt {
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 94%;
+}
+
+#resArt p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+   
+}

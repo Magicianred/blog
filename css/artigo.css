@@ -1,12 +1,15 @@
-body{
-    background-color: orange;
+.menuFixo {
+    position: fixed;
+}
+
+.principalArtigo {
+    padding-top: 136px!important;
 }
 
 .blocoArtigo {
     width: calc(100% - 245px);
     background-color: white;
     padding: 20px 50px 20px 50px;
-
 }
 
 .blocoArtigo p {
@@ -17,13 +20,40 @@ body{
     font-size: 40px;
 }
 
-#imgArt1 {
-    background-image: url("../img/1.jpg");
+#imgArt1, #imgArt2, #imgArt3, #imgArt4, #imgArt5, #imgArt6, #imgArt7 {
     width: 400px;
     height: 400px;
     float: right;
     padding: 7px;
     background-size: cover;
+}
+
+#imgArt1 {
+    background-image: url("../img/1.jpg");
+}
+
+#imgArt2 {
+    background-image: url("../img/2.jpg");
+}
+
+#imgArt3 {
+    background-image: url("../img/3.jpg");
+}
+
+#imgArt4 {
+    background-image: url("../img/4.jpg");
+}
+
+#imgArt5 {
+    background-image: url("../img/5.jpg");
+}
+
+#imgArt6 {
+    background-image: url("../img/6.jpg");
+}
+
+#imgArt7 {
+    background-image: url("../img/7.jpg");
 }
 
 @media only screen and (max-width:1110px){

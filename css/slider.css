@@ -1,0 +1,112 @@
+#blocoSlider {
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-bottom: 4px dashed black;
+}
+
+.block {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    animation:animateleft 0.4s
+}
+
+@keyframes animateleft{
+    from{
+        left:-300px;
+        opacity:0
+    } to{
+        left:0;
+        opacity:1
+    }
+}
+.aparaceSlider {
+    width: 100%!important;
+    transition-duration: 1s;
+}
+
+.desapareceSlider {
+    width: 0px!important;
+    transition-duration: 1s;
+}
+
+#img1, #img2, #img3, #img4 {
+    position: relative;
+    top: 0px;
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url("../img/1.jpg"); 
+} 
+
+#img2{
+    background-image: url("../img/2.jpg");
+}
+
+#img3{
+    background-image: url("../img/3.jpg");
+}
+
+#img4{
+    background-image: url("../img/4.jpg");
+}
+
+#blocoSlider hgroup {
+    position: absolute;
+    width: 65%;
+    padding: 5px;
+}
+
+#blocoSlider h2 {
+    font-size: 40px;
+    padding: 7px;
+    margin: 5px;
+    background-color: orange;
+    display: inline-block;
+    color: white;
+    position: relative;
+    animation:animateleft 0.4s;
+}
+
+#blocoSlider p {
+    font-size: 25px;
+    padding: 7px;
+    margin: 5px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    animation:animateleft 0.8s;
+}
+
+#avancar, #voltar {
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 50%;
+    position: absolute;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#avancar img, #voltar img {
+    width: 40px;
+    height: 40px;
+}
+
+#avancar {
+    right: 0px; 
+}

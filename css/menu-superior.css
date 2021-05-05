@@ -1,0 +1,87 @@
+/*Menu superior*/
+#blocoMenuSup {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    width: calc(100% - 40px);
+    z-index: 999;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+}
+
+#blocoMenuSup li {
+    color: white;
+    display: inline-block;
+    font-size: 27px;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+#blocoMenuSup li:hover {
+    color: blue;
+}
+
+/*Submenu*/
+#subMenu::after {
+    content: "▿";
+}
+
+#subMenu ul {
+    z-index: 999;
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 5px;
+}
+
+#subMenu li {
+    display: block!important;
+    font-size: 20px!important;
+    font-style: italic;
+}
+
+/*Menu superior mobile*/
+#menu {
+    display: none;
+    padding: 5px;
+    border: ridge 2px #3393e74f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px){
+    #menu {
+        display: block;
+    }
+
+    #menuSup{
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        z-index: 999;
+        background-color: black;
+        padding: 5px;
+    }
+
+    #blocoMenuSup ul ul {
+        top: 40px;
+    }
+    
+    #blocoMenuSup li {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:701px){
+    #menuSup {
+        display: block!important;
+    }
+}

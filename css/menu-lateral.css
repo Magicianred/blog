@@ -1,0 +1,38 @@
+#menuLateral {
+    width: 245px;
+    margin-left: 5px;
+    background-color: white;
+    position: sticky;
+    top: 85px;
+    padding: 20px 0px 20px 0px;
+}
+
+
+#menuLateral ul {
+    margin: 5px;
+}
+
+#menuLateral li {
+    list-style: none;
+    cursor: pointer;
+    padding: 2.5px;
+    border-bottom: dotted 1px gray;
+}
+
+#menuLateral a {
+    color: black;
+    text-decoration: none;
+}
+
+#menuLateral a:hover {
+    color: blue;
+}
+
+#menuLateral h2 {
+    color: blue;
+}
+
+#artRecBloco, #artPopBloco, #categoBloco {
+    margin: 0px 5px 0px 5px;
+    padding: 5px 0px 5px 0px;
+}

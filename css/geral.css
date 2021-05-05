@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Corpo*/
+article {
+    background-color: rgba(0, 0, 0, 0.233);
+    z-index: 99;
+    position: relative;
+}
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

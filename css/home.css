@@ -18,24 +18,60 @@
     overflow: hidden;
 }
 
-#resArt h1 {
+#resArt h1,  #resArt2 h1, #resArt3 h1, #resArt4 h1, #resArt5 h1, #resArt6 h1, #resArt7 h1{
     text-align: center;
     font-size: 40px;
+    color: blue;
+    border-bottom: solid 1px blue;
 }
 
 #imgArt1 {
-    background-image: url("../img/1.jpg");
+    background-image: url(../img/1.jpg);
     background-size: cover;
     height: 377px;
-    width: 100%;  
+    margin: 0 auto;
 }
 
-
-iframe {
-    width: 200px;
-    height: 200px;
+#imgArt2 {
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    height: 377px;
     margin: 0 auto;
-    overflow: hidden;
+}
+
+#imgArt3 {
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    height: 377px;
+    margin: 0 auto;
+}
+
+#imgArt4 {
+    background-image: url(../img/4.jpg);
+    background-size: cover;
+    height: 377px;
+    margin: 0 auto;
+}
+
+#imgArt5 {
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    height: 377px;
+    margin: 0 auto;
+}
+
+#imgArt6 {
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    height: 377px;
+    margin: 0 auto;
+}
+
+#imgArt7 {
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+    height: 377px;
+    margin: 0 auto;
 }
 
 .imgResBloco {
@@ -45,13 +81,18 @@ iframe {
 }
 
 #resArt {
-    background-color: rgba(0, 0, 0, 0.61);
-    width: 94%;
+    width: 100%;
 }
 
-#resArt p {
-    color: white;
+#resArt p, #resArt2 p, #resArt3 p, #resArt4 p, #resArt5 p, #resArt6 p, #resArt7 p {
     text-align: center;
-    font-size: 25px;
-   
+    font-size: 23px;
+    z-index: 99;
+    position: relative;
+    top: -338px;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
 }

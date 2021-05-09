@@ -19,25 +19,13 @@ $(document.body).ready(function(){
    
 
   
-   
-   /*
-    var dados = new FormData($("form[id='doc_form_doc']")[0])
-    $.ajax({
-        type: "POST",
-        url: "screens/aside/open/doc_ger/links/return_doc_update.php",
-        data: dados,
-        processData: false,
-        contentType: false,
-        cache: false,
-        success: function(result){
-            $('#doc_loading').html(result)
-            loadOFF()
-        },
-        error: function(){
-            $('#doc_loading').html('Desculpe, ocorreu um erro, tente novamente mais tarde ou entre em contato com o suporte.')
-            loadOFF()
-        }
-    })
-   
-   */
+   $("#r1").hover(function(){
+    $("#r1").addClass("rHover")
+    $("#sm1").addClass("smHover")
+    $("#resumo1").css({"opacity": "0", "transition-duration": "1s"})
+   },function(){
+    $("#r1").removeClass("rHover")
+    $("#sm1").removeClass("smHover")
+    $("#resumo1").css({"opacity": "1", "transition-duration": "1s"})
+   })
 })

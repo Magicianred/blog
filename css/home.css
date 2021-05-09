@@ -7,71 +7,66 @@
 #resumos {
     width: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .resumo {
     width: calc(50% - 15px);
-    height: 377px;
     border: blue 1px solid;
     margin: 5px;
-    display: inline-block;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #resArt h1,  #resArt2 h1, #resArt3 h1, #resArt4 h1, #resArt5 h1, #resArt6 h1, #resArt7 h1{
     text-align: center;
     font-size: 40px;
     color: blue;
-    border-bottom: solid 1px blue;
+    background-color: rgba(0, 0, 0, 0.527);
 }
 
-#imgArt1 {
+#resArt {
     background-image: url(../img/1.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt2 {
+#resArt2 {
     background-image: url(../img/2.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt3 {
+#resArt3 {
     background-image: url(../img/3.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt4 {
+#resArt4 {
     background-image: url(../img/4.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt5 {
+#resArt5 {
     background-image: url(../img/5.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt6 {
+#resArt6 {
     background-image: url(../img/6.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
-#imgArt7 {
+#resArt7 {
     background-image: url(../img/7.jpg);
     background-size: cover;
-    height: 377px;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
 
 .imgResBloco {
@@ -88,11 +83,43 @@
     text-align: center;
     font-size: 23px;
     z-index: 99;
-    position: relative;
-    top: -338px;
-    background-color: rgba(0, 0, 0, 0.411);
     color: white;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.saberMais {
+    display: none;
+    transition-duration: 1s;
+}
+
+.rHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+.smHover {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    display: block!important;
+    transition-duration: 1s;
+}
+
+.saberMais a {
+    text-decoration: none;
+    color: white;
     padding: 5px;
+    background-color: blue;
+    z-index: 99;
+}
+
+.saberMais a:hover {
+    color: red;
 }

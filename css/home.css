@@ -93,6 +93,7 @@
 .saberMais {
     display: none;
     transition-duration: 1s;
+    z-index: 99;
 }
 
 .rHover {
@@ -112,14 +113,52 @@
     transition-duration: 1s;
 }
 
+.resumo1hover {
+    opacity: 0; 
+    transition-duration: 1s;
+}
+
+.rRemove {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition-duration: 1s;
+}
+
+.smRemove {
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: none!important;
+    transition-duration: 1s;
+}
+
+.resumo1remove {
+    opacity: 1; 
+    transition-duration: 1s;
+}
+
 .saberMais a {
     text-decoration: none;
-    color: white;
+    color: rgb(221, 221, 221);
     padding: 5px;
     background-color: blue;
     z-index: 99;
+    box-shadow: 0 0.2em 1em gray;
 }
 
-.saberMais a:hover {
-    color: red;
+.saberMaishover {
+    color: white!important;
+    background-color: rgb(102, 102, 255)!important;
+    box-shadow: 0 0.2em 1em white!important;
+    transition-duration: 1s;
+}
+
+.saberMaisTirar {
+    color: rgb(221, 221, 221)!important;
+    background-color: blue!important;
+    box-shadow: 0 0.2em 1em gray!important;
+    transition-duration: 1s;
 }

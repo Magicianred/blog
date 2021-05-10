@@ -20,12 +20,26 @@ $(document.body).ready(function(){
 
   
    $("#r1").hover(function(){
-    $("#r1").addClass("rHover")
-    $("#sm1").addClass("smHover")
-    $("#resumo1").css({"opacity": "0", "transition-duration": "1s"})
+        $("#r1").addClass("rHover")
+        $("#sm1").addClass("smHover")
+        $("#resumo1").addClass("resumo1hover")
+        $("#r1").removeClass("rRemove")
+        $("#sm1").removeClass("smRemove")
+        $("#resumo1").removeClass("resumo1remove")
    },function(){
-    $("#r1").removeClass("rHover")
-    $("#sm1").removeClass("smHover")
-    $("#resumo1").css({"opacity": "1", "transition-duration": "1s"})
+        $("#r1").removeClass("rHover")
+        $("#sm1").removeClass("smHover")
+        $("#resumo1").removeClass("resumo1hover")
+        $("#r1").addClass("rRemove")
+        $("#sm1").addClass("smRemove")
+        $("#resumo1").addClass("resumo1remove")
+   })
+
+   $("#sm1 a").hover(function(){
+        $("#sm1 a").addClass("saberMaishover")
+        $("#sm1 a").removeClass("saberMaisTirar")
+   }, function(){
+        $("#sm1 a").addClass("saberMaisTirar")
+        $("#sm1 a").removeClass("saberMaishover")
    })
 })

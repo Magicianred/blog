@@ -110,3 +110,22 @@
 #avancar {
     right: 0px; 
 }
+
+@media only screen and (max-width:500px){
+    #blocoSlider hgroup {
+        width: 95%;
+    }
+
+    #blocoSlider p {
+        font-size: 20px;
+    }
+
+    #blocoSlider h2 {
+        font-size: 33px;
+    }
+
+    #avancar img, #voltar img {
+        width: 25px;
+        height: 25px;
+    }
+}

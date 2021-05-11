@@ -19,3 +19,25 @@ article {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media only screen and (max-width:900px){
+    #principal {
+        flex-wrap: wrap;
+    }
+
+    #blocoResumos {
+        width: 100%!important;
+        margin-bottom: 25px;
+    }
+
+    #menuLateral {
+        width: 100%!important;
+        margin-left: 0px!important;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .resumo{
+        width: calc(100% - 15px)!important;
+    }
+}

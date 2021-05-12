@@ -1,4 +1,4 @@
-# blog
+# Blog
  **Exemplo de um blog (front-end) feito com jQuery**
  * HTML semântico
  * Flexbox

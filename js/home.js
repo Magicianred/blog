@@ -193,4 +193,10 @@ $(document.body).ready(function(){
           $("#sm7 a").addClass("saberMaisTirar")
           $("#sm7 a").removeClass("saberMaishover")
      })
+
+     /*
+     if(window = location.reload){
+          fixeMenu()
+     }
+     */
 })

@@ -43,13 +43,19 @@ $(document.body).ready(function(){
     
     $("#blocoSlider").hover(function(){
         clearInterval(tempSlider)
-        $("#voltar").css("display", "flex")
-        $("#avancar").css("display", "flex")
+        $("#voltar").addClass("apareceVoltar")
+        $("#voltar").removeClass("someVoltar")
+
+        $("#avancar").addClass("apareceVoltar")
+        $("#avancar").removeClass("someVoltar")
     }, function(){
         clearInterval(tempSlider)
         tempSlider = setInterval(trocaSlider, 5500)
-        $("#voltar").css("display", "none")
-        $("#avancar").css("display", "none")
+        $("#voltar").addClass("someVoltar")
+        $("#voltar").removeClass("apareceVoltar")
+
+        $("#avancar").addClass("someVoltar")
+        $("#avancar").removeClass("apareceVoltar")
     })
   
 })

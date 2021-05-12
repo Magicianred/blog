@@ -15,7 +15,7 @@
 .resumo {
     width: calc(50% - 15px);
     border: blue 1px solid;
-    margin: 5px;
+    margin: 6.5px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -161,4 +161,10 @@
     background-color: blue!important;
     box-shadow: 0 0.2em 1em gray!important;
     transition-duration: 1s;
+}
+
+@media only screen and (max-width:300px) {
+    #resArt p, #resArt2 p, #resArt3 p, #resArt4 p, #resArt5 p, #resArt6 p, #resArt7 p{
+        font-size: 20px;
+    }
 }

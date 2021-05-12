@@ -8,6 +8,8 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.233);
     border-bottom: 4px dashed black;
+    z-index: 99;
+    position: relative;
 }
 
 .block {
@@ -28,6 +30,7 @@
         opacity:1
     }
 }
+
 .aparaceSlider {
     width: 100%!important;
     transition-duration: 1s;
@@ -100,6 +103,7 @@
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 991;
 }
 
 #avancar img, #voltar img {
@@ -111,21 +115,72 @@
     right: 0px; 
 }
 
+#blocoSlider a {
+    color: black;
+}
+
+
+
+@media only screen and (min-width:501px){
+    .apareceVoltar {
+        display: block!important;
+    }
+
+    .someVoltar {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width:640px){
+    #blocoSlider h2 {
+        font-size: 28px;
+        padding: 2px;
+    }
+
+    #blocoSlider p {
+        font-size: 17px;
+        padding: 4px
+    }
+}
+
 @media only screen and (max-width:500px){
     #blocoSlider hgroup {
         width: 95%;
     }
 
-    #blocoSlider p {
-        font-size: 20px;
-    }
-
-    #blocoSlider h2 {
-        font-size: 33px;
+    #blocoSlider {
+        align-items: flex-end
     }
 
     #avancar img, #voltar img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #avancar, #voltar {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+  
+    .someVoltar {
+        display: block!important;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #blocoSlider p {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    #blocoSlider h2 {
+        font-size: 22px;
+        padding: 2px;
+    }
+
+    #avancar img, #voltar img {
+        width: 10px;
+        height: 10px;
     }
 }
